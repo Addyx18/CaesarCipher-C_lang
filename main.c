@@ -25,7 +25,7 @@ int main() {
             int key = keyInput(); 
             char* output = encrypt(inputPtr, key);
             if(output != NULL) {
-                printf("%s\n", output);
+                printf("Encrypted text: %s\n", output);
                 free(output);
             }
             break;
@@ -40,7 +40,7 @@ int main() {
                 int key = keyInput(); 
                 char* output = decrypt(inputPtr, key);
                 if(output != NULL) {
-                    printf("%s\n", output);
+                    printf("Decrypted text: %s\n", output);
                     free(output);
                 }
             }
