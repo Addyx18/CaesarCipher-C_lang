@@ -75,7 +75,11 @@ char* decrypt(char* buffer, int key) {
 
 void decrypt_brute(char* buffer) { // Brute forcing
     for(int i = 1; i<=25; i++) {
-        decrypt(buffer, i);
+        char* output = decrypt(buffer, i);
+        if(output != NULL) {
+            printf("%s\n", output);
+            free(output);
+        }
     }
 }
 
