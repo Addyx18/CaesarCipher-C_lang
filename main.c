@@ -2,8 +2,15 @@
 
 int main() {
 
-    puts("===========   Welcome to Caesar Cipher (Encryption/ Decryption)   ===========\n\n");
 
+     printf("_________                                      _________ .__       .__                  \n");
+    printf("\\_   ___ \\_____    ____   ___________ _______  \\_   ___ \\|__|_____ |  |__   ___________ \n");
+    printf("/    \\  \\/\\__  \\ _/ __ \\ /  ___/\\__  \\\\_  __ \\ /    \\  \\/|  \\____ \\|  |  \\_/ __ \\_  __ \\\n");
+    printf("\\     \\____/ __ \\\\  ___/ \\___ \\  / __ \\|  | \\/ \\     \\___|  |  |_> >   Y  \\  ___/|  | \\/\n");
+    printf(" \\______  (____  /\\___  >____  >(____  /__|     \\______  /__|   __/|___|  /\\___  >__|   \n");
+    printf("        \\/     \\/     \\/     \\/      \\/                \\/   |__|        \\/     \\/       \n");
+
+    puts("\n\n================   Welcome to Caesar Cipher (Encryption/ Decryption)   ================\n\n");
     char* inputPtr = (char*)malloc(sizeof(char) * INPUT_SIZE); 
 
     if(inputPtr == NULL) {
