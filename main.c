@@ -10,7 +10,7 @@ int main() {
     printf(" \\______  (____  /\\___  >____  >(____  /__|     \\______  /__|   __/|___|  /\\___  >__|   \n");
     printf("        \\/     \\/     \\/     \\/      \\/                \\/   |__|        \\/     \\/       \n");
 
-    puts("\n\n================   Welcome to Caesar Cipher (Encryption/ Decryption)   ================\n\n");
+    printf("\n\n\033[1;32m================   Welcome to Caesar Cipher (Encryption/ Decryption)   ================\033[0m\n\n");
     char* inputPtr = (char*)malloc(sizeof(char) * INPUT_SIZE); 
 
     if(inputPtr == NULL) {
