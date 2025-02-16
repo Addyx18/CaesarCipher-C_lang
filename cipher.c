@@ -17,15 +17,21 @@ bool isNumber(const char* str) {
 }
 
 void take_input(char* buffer, size_t size) {
-    if(fgets(buffer, size, stdin)) {
-        size_t len = strlen(buffer);
+    while(strlen(buffer)==0) {
+        if(fgets(buffer, size, stdin)) {
+            size_t len = strlen(buffer);
 
-        if(len > 0 && buffer[len-1] == '\n') {
-            buffer[len-1] = '\0';
+            if(len > 0 && buffer[len-1] == '\n') {
+                buffer[len-1] = '\0';
+            }
+            else {
+                int c;
+                while ((c = getchar()) != '\n' && c != EOF);
+            }
         }
-        else {
-            int c;
-            while ((c = getchar()) != '\n' && c != EOF);
+        if(strlen(buffer) == 0) {
+            puts("Can't pass it empty!!");
+            printf("Enter valid input: ");
         }
     }
 }
